@@ -85,18 +85,12 @@ function MainPage() {
     const dtDe = await deepTranslate(copyEnteredDeJson, 'de');
     const dtFr = await deepTranslate(copyEnteredFrJson, 'fr');
 
-    setResultEnJson(dtJa);
-    setResultDeJson(dtEn);
+    setResultJaJson(dtJa);
+    setResultEnJson(dtEn);
     setResultEsJson(dtEs);
-    setResultFrJson(dtDe);
-    setResultJaJson(dtFr);
+    setResultDeJson(dtDe);
+    setResultFrJson(dtFr);
   }, [enteredJson]);
-
-  // console.log('resultEnJson > ', JSON.stringify(resultEnJson));
-  // console.log('resultDeJson > ', JSON.stringify(resultDeJson));
-  // console.log('resultEsJson > ', JSON.stringify(resultEsJson));
-  // console.log('resultFrJson > ', JSON.stringify(resultFrJson));
-  // console.log('resultJaJson > ', JSON.stringify(resultJaJson));
 
   return (
     <div>
